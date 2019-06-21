@@ -20,7 +20,9 @@ class MainActivity : AppCompatActivity() {
     /**
      * 需要申请的运行时权限
      */
-    private val permissions = arrayOf<String>(Manifest.permission.RECORD_AUDIO, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA)
+    private val permissions =
+        arrayOf<String>(Manifest.permission.RECORD_AUDIO, Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.CAMERA)
     /**
      * 被用户拒绝的权限列表
      */
@@ -44,7 +46,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
     private fun checkPermissions() {
         // Marshmallow开始才用申请运行时权限
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -60,7 +61,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
         if (requestCode == 1001) {
             for (i in grantResults.indices) {
@@ -70,6 +70,4 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
-
 }
