@@ -6,34 +6,40 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".MainActivity">
+    tools:context=".audiorecord.AudioRecordActivity">
 
     <Button
-        android:id="@+id/tv_draw_bitmap"
+        android:id="@+id/tv_control"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Draw_Bitmap_Activity!"
+        android:text="Start Record!"
         />
 
     <Button
-        android:id="@+id/tv_audio_record"
+        android:id="@+id/tv_convert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="audio_record_Activity!"
+        android:text="Convert to wav!"
         />
 
     <Button
-        android:id="@+id/tv_camera"
+        android:id="@+id/tv_play_static"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Camera_Activity!"
+        android:text="Play by static!"
         />
 
     <Button
-        android:id="@+id/tv_opengles_draw"
+        android:id="@+id/tv_play_steam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OPENGLES_DRAW!"
+        android:text="Play by stream!"
         />
 
+    <Button
+        android:id="@+id/tv_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StopPlay"
+        />
 </LinearLayout>
